@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://jenniferdewalt.com/node/hello_world -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta property="og:image" content="https://jenniferdewalt.com/images/fb_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Hello World! | Raymond</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/coordinator.css" rel="stylesheet">
+</head>
+
+<body id="hello_world">
+    <header>
+    </header>
+    <div id="wrap">
+        <div id="container">
+            <div class="progress_window">
+                <div class="loading text">Waiting...</div>
+                <div class="bar_container">
+                    <div class="inner_bar"></div>
+                </div>
+            </div>
+            <button class="trigger-btn able btn-coo">START</button>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/coordinator.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDufa6WuysCY33pFNlvv_hp6my9l83pNq0",
+        authDomain: "bobbyhongsocket.firebaseapp.com",
+        databaseURL: "https://bobbyhongsocket.firebaseio.com",
+        storageBucket: "bobbyhongsocket.appspot.com",
+    };
+    firebase.initializeApp(config);
+    </script>
+</body>
+
+</html>

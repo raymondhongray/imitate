@@ -1,0 +1,241 @@
+body {
+    overflow-x: hidden;
+    background-color: #6b92b9;
+    background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
+    animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px
+    }
+    50% {
+        background-color: #b4cfe0
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+
+header {
+    position: fixed;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    z-index: 1000;
+    background: #ff9933;
+    width: 100%;
+}
+
+#links_container {
+    text-align: right;
+}
+
+#links_container a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.hello {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 100px;
+    line-height: 100px;
+    color: #ff9933;
+}
+
+.sake {
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.infinite-blink {
+    animation: infinite_blink 0.7s infinite;
+}
+
+.blink {
+    animation: blink 1s;
+}
+
+.play {
+    animation: play 1s;
+}
+
+.spin {
+    animation: spin 0.5s;
+}
+
+.grow {
+    animation: grow 2s;
+}
+
+.shake {
+    animation: shake 1s;
+}
+
+@keyframes infinite_blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    /*100% { opacity: 1; }*/
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes play {
+    0% {
+        transform: translateX(0);
+    }
+    12% {
+        transform: translateY(-50px) rotate(-20deg);
+    }
+    25% {
+        transform: translateX(0px);
+    }
+    37% {
+        transform: translateY(-50px) rotate(20deg);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    62% {
+        transform: translateY(-50px) rotate(-20deg);
+    }
+    75% {
+        transform: translateX(0px);
+    }
+    87% {
+        transform: translateY(-50px) rotate(20deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    8% {
+        transform: rotate(-50deg);
+    }
+    12% {
+        transform: rotate(-50deg);
+    }
+    100% {
+        transform: rotate(3600deg);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    5%,
+    15%,
+    25%,
+    35%,
+    45%,
+    55%,
+    65%,
+    75%,
+    85%,
+    95% {
+        transform: translateX(-20px);
+    }
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90% {
+        transform: translateX(20px);
+    }
+}
+
+.shark_1 {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    cursor: pointer;
+    overflow: hidden;
+    animation: shark_move 3s linear infinite;
+}
+
+@keyframes shark_move {
+    0% {
+        right: -10%;
+    }
+    100% {
+        right: 110%;
+    }
+}
+
+.ducky {
+    position: absolute;
+    top: 95%;
+    animation: down 3s linear;
+}
+
+@keyframes down {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 95%;
+    }
+}
